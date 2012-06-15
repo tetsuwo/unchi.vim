@@ -6,8 +6,8 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! unchi#p(data)
-    echo data
+function! unchi#print(data)
+    echo a:data
 endfunction
 
 let &cpo = s:save_cpo

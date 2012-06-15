@@ -11,8 +11,9 @@ let g:loaded_unchi = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! Unchi 
-    \ echo "Yeah! Unchi!!"
+"command! -nargs=0 MyTaskToggle call vimtask#toggle(getline("."))
+command! Unchi call unchi#print("Yeah! Unchi!!")
+"command! Unchi echo "Yeah! Unchi!!"
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
